@@ -40,6 +40,7 @@ coreo_aws_rule "elb-old-ssl-policy" do
   display_name "ELB is using old SSL policy"
   description "Elastic Load Balancing (ELB) SSL policy is not the latest Amazon predefined SSL policy or is a custom ELB SSL policy."
   category "Security"
+  include_violations_in_count false
   suggested_action "Always use the current AWS predefined security policy."
   level "Informational"
   meta_nist_171_id "3.5.4"
